@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Освітня платформа для вчителів</title>
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
@@ -18,7 +20,7 @@
                 <path d="M50 35V70" stroke="#FCF1D0" stroke-width="6" stroke-linecap="round"/>
                 <path d="M20 38L50 23L80 38" stroke="#FCF1D0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <span class="logo-text">Edu</span>
+            <span class="logo-text">EduT</span>
         </div>
 
         <nav class="nav-right">
@@ -102,6 +104,47 @@
         </section>
     </main>
 
+  <!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Колонка 1: Про проєкт -->
+        <div class="footer-col footer-about">
+            <div class="footer-logo">
+                <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="100" rx="20" fill="#22396F"/>
+                    <path d="M30 70V45L50 35L70 45V70" stroke="#FCF1D0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M50 35V70" stroke="#FCF1D0" stroke-width="6" stroke-linecap="round"/>
+                    <path d="M20 38L50 23L80 38" stroke="#FCF1D0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="logo-text">EduT</span>
+            </div>
+            <p class="footer-desc">
+                Платформа підвищення кваліфікації та сучасних цифрових інструментів для педагогів.
+            </p>
+        </div>
+
+       
+  
+
+        <!-- Колонка 4: Форма підписки -->
+        <!-- <div class="footer-col footer-subscribe">
+            <h4 class="footer-heading">Новини та оновлення</h4>
+            <p>Підпишіться, щоб отримувати сповіщення про нові теми та курси:</p>
+            <form id="subscribe-form" class="subscribe-form">
+                <input type="email" id="subscribe-email" placeholder="Ваш Email..." required>
+                <button type="submit" class="btn-subscribe">Підписатися</button>
+            </form>
+            <span id="subscribe-message" class="subscribe-message hidden"></span>
+        </div>
+    </div> -->
+
+    <!-- Нижня смуга з копірайтом -->
+    <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> EduT. Всі права захищено.</p>
+    </div>
+</footer>
+   
     <script src="main.js"></script>
+    <script src="footer.js"></script>
 </body>
 </html>

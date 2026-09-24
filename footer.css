@@ -1,0 +1,167 @@
+/* FOOTER STYLES */
+.footer {
+    background-color: #0D1C42;
+    color: #FCF1D0;
+    border-top: 1px solid #22396F;
+    margin-top: auto;
+    padding-top: 3rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 8rem 1rem 1rem;
+    
+    gap: 2rem;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+  
+}
+
+/* Про проєкт */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.footer-about .logo-text {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #FCF1D0;
+}
+
+.footer-desc {
+    opacity: 0.75;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Заголовки колонок */
+.footer-heading {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    color: #FCF1D0;
+    position: relative;
+    padding-bottom: 0.4rem;
+}
+
+.footer-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 35px;
+    height: 2px;
+    background-color: #FCF1D0;
+    border-radius: 2px;
+}
+
+/* Навігаційні посилання та контакти */
+.footer-links,
+.footer-contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li,
+.footer-contact-list li {
+    margin-bottom: 0.6rem;
+    font-size: 0.9rem;
+}
+
+.footer-links a {
+    color: #FCF1D0;
+    opacity: 0.75;
+    text-decoration: none;
+    transition: opacity 0.2s, transform 0.2s;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    transform: translateX(4px);
+}
+
+.footer-contact-list li {
+    opacity: 0.8;
+}
+
+/* Форма підписки */
+.footer-subscribe p {
+    font-size: 0.88rem;
+    opacity: 0.75;
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 0.65rem 0.9rem;
+    background-color: #010736;
+    border: 1px solid #22396F;
+    border-radius: 6px;
+    color: #FCF1D0;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.subscribe-form input[type="email"]::placeholder {
+    color: #FCF1D0;
+    opacity: 0.4;
+}
+
+.subscribe-form input[type="email"]:focus {
+    border-color: #FCF1D0;
+}
+
+.btn-subscribe {
+    background-color: #22396F;
+    color: #FCF1D0;
+    border: 1px solid #FCF1D0;
+    padding: 0.65rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-subscribe:hover {
+    background-color: #FCF1D0;
+    color: #010736;
+}
+
+.subscribe-message {
+    margin-top: 0.6rem;
+    font-size: 0.85rem;
+    color: #4ade80; /* світло-зелений для підтвердження */
+}
+
+/* Копірайт (Нижня частина) */
+.footer-bottom {
+  
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+    opacity: 0.7;
+   
+}
+
+/* Адаптивність */
+@media (max-width: 600px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+    }
+}
